@@ -1,0 +1,152 @@
+focus_tree = {
+    id = congo_rubber_tree
+    country = {
+        tag =INS
+    }
+    default = no
+    reset_on_civilwar = no
+
+    focus = {
+        id = congo_rubber_phase_1
+        icon = GFX_goal_generic_industry
+        x = 0
+        y = 0
+        cost = 10
+        completion_reward = {
+            random_owned_state = {
+                limit = {
+                    has_resource = rubber
+                    resource_amount = { rubber < 2 }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 1
+                }
+                add_state_modifier = {
+                    name = rubber_development_phase_1
+                    duration = -1
+                }
+            }
+            add_ideas = rubber_development_phase_1_idea
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = congo_rubber_phase_2
+        icon = GFX_goal_generic_industry
+        prerequisite = { focus = congo_rubber_phase_1 }
+        x = 1
+        y = 0
+        cost = 10
+        completion_reward = {
+            random_owned_state = {
+                limit = {
+                    has_resource = rubber
+                    resource_amount = { rubber < 3 }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 1
+                }
+                add_state_modifier = {
+                    name = rubber_development_phase_2
+                    duration = -1
+                }
+            }
+            add_ideas = rubber_development_phase_2_idea
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = congo_rubber_phase_3
+        icon = GFX_goal_generic_industry
+        prerequisite = { focus = congo_rubber_phase_2 }
+        x = 2
+        y = 0
+        cost = 10
+        completion_reward = {
+            random_owned_state = {
+                limit = {
+                    has_resource = rubber
+                    resource_amount = { rubber < 4 }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 1
+                }
+                add_state_modifier = {
+                    name = rubber_development_phase_3
+                    duration = -1
+                }
+            }
+            add_ideas = rubber_development_phase_3_idea
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = congo_rubber_phase_4
+        icon = GFX_goal_generic_industry
+        prerequisite = { focus = congo_rubber_phase_3 }
+        x = 3
+        y = 0
+        cost = 10
+        completion_reward = {
+            random_owned_state = {
+                limit = {
+                    has_resource = rubber
+                    resource_amount = { rubber < 5 }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 1
+                }
+                add_state_modifier = {
+                    name = rubber_development_phase_4
+                    duration = -1
+                }
+            }
+            add_ideas = rubber_development_phase_4_idea
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
+    focus = {
+        id = congo_rubber_phase_5
+        icon = GFX_goal_generic_industry
+        prerequisite = { focus = congo_rubber_phase_4 }
+        x = 4
+        y = 0
+        cost = 10
+        completion_reward = {
+            random_owned_state = {
+                limit = {
+                    has_resource = rubber
+                    resource_amount = { rubber < 6 }
+                }
+                add_resource = {
+                    type = rubber
+                    amount = 1
+                }
+                add_state_modifier = {
+                    name = rubber_development_phase_5
+                    duration = -1
+                }
+            }
+            add_ideas = rubber_development_phase_5_idea
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}
